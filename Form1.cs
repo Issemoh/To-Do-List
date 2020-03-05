@@ -32,8 +32,21 @@ namespace To_Do_List
                 else
                 {
                     //USe add to add new item to end of items collection
-                    clsToDo.Items.Add(newItem);
+                    DateTime todoCreated = DateTime.Now;
+                    bool urgent = chkUrgent.Checked;
+
+                    // Format the text, date/time createdand urgent into one string 
+                    string todoText = $"{newItem} - Created at {todoCreated:g}";
+                    if (urgent)
+                    {
+                        todoText += "URGENT!";
+                    }
+                    // ADD to the listboxes item
+                    clsToDo.Items.Add(todoText);
+
+                    // clear inputs
                     txtNewToDo.Text = "";
+                    chkUrgent.Checked = false;
                 }
             }
             // no else , just ignore empty input 

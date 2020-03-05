@@ -37,6 +37,7 @@
             this.lblDeleteItem = new System.Windows.Forms.Label();
             this.LstDone = new System.Windows.Forms.ListBox();
             this.btnExit = new System.Windows.Forms.Button();
+            this.chkUrgent = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +63,7 @@
             // btnAddToDo
             // 
             this.btnAddToDo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddToDo.Location = new System.Drawing.Point(464, 29);
+            this.btnAddToDo.Location = new System.Drawing.Point(487, 33);
             this.btnAddToDo.Name = "btnAddToDo";
             this.btnAddToDo.Size = new System.Drawing.Size(75, 23);
             this.btnAddToDo.TabIndex = 2;
@@ -75,7 +76,7 @@
             // 
             this.txtNewToDo.Location = new System.Drawing.Point(39, 29);
             this.txtNewToDo.Name = "txtNewToDo";
-            this.txtNewToDo.Size = new System.Drawing.Size(406, 20);
+            this.txtNewToDo.Size = new System.Drawing.Size(335, 20);
             this.txtNewToDo.TabIndex = 3;
             // 
             // clsToDo
@@ -126,12 +127,24 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // chkUrgent
+            // 
+            this.chkUrgent.AutoSize = true;
+            this.chkUrgent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkUrgent.Location = new System.Drawing.Point(380, 33);
+            this.chkUrgent.Name = "chkUrgent";
+            this.chkUrgent.Size = new System.Drawing.Size(70, 21);
+            this.chkUrgent.TabIndex = 9;
+            this.chkUrgent.Text = "Urgent";
+            this.chkUrgent.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.chkUrgent);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.LstDone);
             this.Controls.Add(this.lblDeleteItem);
@@ -160,6 +173,7 @@
         private System.Windows.Forms.Label lblDeleteItem;
         private System.Windows.Forms.ListBox LstDone;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.CheckBox chkUrgent;
     }
 }
 
